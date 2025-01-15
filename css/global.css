@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+:root {
+  --white: #FFFFFF;
+  --black: #0E0E0E;
+  --grey1: #333333;
+  --grey2: #828282;
+  --grey3: #DDDDDD;
+  --error: #DB371F;
+  --prim1: #DA7000;
+  --prim2: #FFEA00;
+
+  --h1: 56px;
+  --h2: 48px;
+  --h3: 32px;
+  --h4: 24px;
+  --h5: 20px;
+  --reg20: 20px;
+  --body-bold: 16px;
+  --body: 16px;
+  --caption-bold: 14px; 
+  --caption: 14px;
+  --reg12: 12px;
+  --menu:24px;
+  --h1-mobile: 32px;
+  --h2-mobile: 28px;
+  --font-family: "Roboto";
+  
+}
+
+body {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--grey1);
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+button:active {
+  outline: none;
+}
+
+
+/* ------------------------Служебные классы------------------------------- */
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+.btn {
+  color: var(--white);
+  font-size: var(--caption-bold);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.title {
+  font-size: var(--h2);
+  font-weight: bold;
+  line-height: 130%;
+  color: var(--black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
