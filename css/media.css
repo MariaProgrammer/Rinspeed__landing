@@ -1,4 +1,7 @@
 @media (max-width: 1300px) {
+  .container {
+    max-width: 100%;
+  }
   .technique__container {
     grid-template-columns: repeat(3, 1fr);
   }
