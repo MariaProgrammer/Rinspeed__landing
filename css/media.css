@@ -26,7 +26,7 @@
     font-size: var(--h3);
   }
   .recent__card-title {
-    font-size: var(--h5);
+    font-size: var(--h4);
   }
   .steps__container {
     margin-bottom: 80px;
@@ -163,6 +163,16 @@
   .recent__cards {
     grid-template-columns: 1fr;
   }
+  .recent__plashka {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  .recent__box {
+    max-width: 100%;
+    width: 100%;
+  }
   .technique__container {
     column-gap: 15px;
     row-gap: 15px;
@@ -180,6 +190,10 @@
   }
   .steps__container {
     background-position: 34% 50%, 62% 50%;
+  }
+  .contacts__container {
+    max-width: 100%;
+    width: 100%;
   }
 }
 @media (max-width: 460px) {
