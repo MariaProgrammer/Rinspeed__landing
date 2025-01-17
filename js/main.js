@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('scroll', function () {
   let scrollTop = window.scrollY;
 
-  let heroHeight = hero.offsetHeight; 
+  let heroHeight = hero.offsetHeight;
   let stepsHeight = heroHeight + steps.offsetHeight;
   let recentCards = stepsHeight + recent.offsetHeight
-  let recentCards2 = stepsHeight + (recent.offsetHeight/3)
-  let recentCards5 = stepsHeight + (recent.offsetHeight/5)
-  let techniqueHeight = recentCards + technique.offsetHeight/3;
-  
+  let recentCards2 = stepsHeight + (recent.offsetHeight / 3)
+  let recentCards5 = stepsHeight + (recent.offsetHeight / 5)
+  let techniqueHeight = recentCards + technique.offsetHeight / 3;
+
 
   // if (scrollTop >= heroHeight / 3) {
   //   steps.classList.add('active');
@@ -96,7 +96,7 @@ document.addEventListener('scroll', function () {
       card.classList.remove('animation-class')
     })
   }
-  if (scrollTop >= (recentCards5 + (recentCards5/5))) {
+  if (scrollTop >= (recentCards5 + (recentCards5 / 5))) {
     scrollCards3.forEach(card => {
       card.classList.add('animation-class')
     })
@@ -115,6 +115,10 @@ document.addEventListener('scroll', function () {
   } else {
     contacts.classList.remove('active');
   }
+
+
+
+
 })
 
 
