@@ -54,6 +54,7 @@ const contacts = document.querySelector('.contacts')
 document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
     hero.classList.add('active')
+    steps.classList.add('active');
   }, 100)
 
 
@@ -63,18 +64,18 @@ document.addEventListener('scroll', function () {
   let scrollTop = window.scrollY;
 
   let heroHeight = hero.offsetHeight; 
-  let stepsHeight = hero.offsetHeight + steps.offsetHeight;
+  let stepsHeight = heroHeight + steps.offsetHeight;
   let recentCards = stepsHeight + recent.offsetHeight
   let recentCards2 = stepsHeight + (recent.offsetHeight/3)
   let recentCards5 = stepsHeight + (recent.offsetHeight/5)
   let techniqueHeight = recentCards + technique.offsetHeight/3;
   
 
-  if (scrollTop >= heroHeight / 3) {
-    steps.classList.add('active');
-  } else {
-    steps.classList.remove('active');
-  }
+  // if (scrollTop >= heroHeight / 3) {
+  //   steps.classList.add('active');
+  // } else {
+  //   steps.classList.remove('active');
+  // }
 
   if (scrollTop >= stepsHeight) {
     scrollCards1.forEach(card => {
@@ -114,10 +115,6 @@ document.addEventListener('scroll', function () {
   } else {
     contacts.classList.remove('active');
   }
-
-
-
-
 })
 
 
