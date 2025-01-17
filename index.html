@@ -17,9 +17,9 @@
       <nav class="header__container">
         <img src="img/icons/logo.svg" alt="" class="logo__img">
         <ul class="header__menu">
-          <li class="header__menu-item"><a href="" class="header__menu-link">Недавно выкупили</a></li>
-          <li class="header__menu-item"><a href="" class="header__menu-link">Техника, которую выкупаем</a></li>
-          <li class="header__menu-item"><a href="" class="header__menu-link">Заявка на выкуп</a></li>
+          <li class="header__menu-item"><a href="#recent" class="header__menu-link">Недавно выкупили</a></li>
+          <li class="header__menu-item"><a href="#technique" class="header__menu-link">Техника, которую выкупаем</a></li>
+          <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Заявка на выкуп</a></li>
         </ul>
         <div class="header__contacts-container">
           <div class="header__contacts">
@@ -32,7 +32,7 @@
 
           </div>
           <p class="header__tel">+7999999-99-99</p>
-          <button class="header__btn btn btn-reset">Заявка на оценку</button>
+          <a href="#contacts" class="header__btn btn btn-reset">Заявка на оценку</a>
         </div>
       </nav>
       <div class="nav__burger">
@@ -54,9 +54,9 @@
     <section class="hero">
       <nav class="burger__menu" id="nav">
         <ul class="burger__menu-list">
-          <li class="burger__menu-item"><a href="#" class="burger__menu-link">Недавно выкупили</a></li>
-          <li class="burger__menu-item"><a href="#" class="burger__menu-link">Техника, которую выкупаем</a></li>
-          <li class="burger__menu-item"><a href="#" class="burger__menu-link">Заявка на выкуп</a></li>
+          <li class="burger__menu-item"><a href="#recent" class="burger__menu-link">Недавно выкупили</a></li>
+          <li class="burger__menu-item"><a href="#technique" class="burger__menu-link">Техника, которую выкупаем</a></li>
+          <li class="burger__menu-item"><a href="#contacts" class="burger__menu-link">Заявка на выкуп</a></li>
         </ul>
         <div class="burger__contacts">
           <a href="" class="burger__contact">
@@ -68,7 +68,7 @@
             <span class="footer__contact-title">WhatsApp</span>
           </a>
           <p class="header__tel burger__tel">+7999999-99-99</p>
-          <button class="header__btn btn btn-reset">Заявка на оценку</button>
+          <a href="#contacts" class="header__btn btn btn-reset">Заявка на оценку</a>
 
         </div>
       </nav>
@@ -79,7 +79,13 @@
           </div>
           <h1 class="hero__title">Выкуп спецтехники <br> в Москве и МО</h1>
           <p class="hero__descr">Оценим вашу технику за 5 минут и дадим лучшую цену на рынке!</p>
-          <button class="hero__btn btn btn-reset">Узнать цену</button>
+          <a href="#contacts" class="hero__btn btn btn-reset">Узнать цену</a>
+        </div>
+        <div class="cookie" id="cookie">
+          <div class="cookie__container">
+            <p class="cookie__text">«ООО „Фрешсел“ обрабатывает cookies с целью персонализации сервисов и чтобы пользоваться веб-сайтом было удобнее. Вы можете запретить обработку сookies в настройках браузера. Пожалуйста, ознакомьтесь с <a href="#" class="cookies__link">политикой использования cookies.</a> Читайте подробнее о <a href="#" class="rules__link">правилах оказания услуг ООО „Фрешсел“.</a></p>
+            <button class="btn-reset cookie__button btn" id="cookie__button">Принять</button>
+          </div>         
         </div>
       </div>
     </section>
@@ -108,11 +114,11 @@
         </div>
       </div>
     </section>
-    <section class="recent">
+    <section class="recent" id="recent">
       <div class="container">
         <div class="recent__upper">
           <h2 class="recent__title title">Недавно выкупили</h2>
-          <button class="recent__btn btn btn-reset">Оцените мою технику</button>
+          <a href="#contacts" class="recent__btn btn btn-reset">Оцените мою технику</a>
         </div>
         <div class="recent__cards">
           <div class="recent__card">
@@ -344,7 +350,7 @@
         </div>
       </div>
     </section>
-    <section class="technique">
+    <section class="technique" id="technique">
       <div class="container">
         <h2 class="technique__title title">
           Техника, которую выкупаем
@@ -520,7 +526,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__container">
           <h2 class="title contacts__title">Заявка на срочный выкуп техники</h2>
@@ -554,9 +560,7 @@
       
 
     </section>
-    <footer class="footer">
-
-    </footer>
+    
   </main>
   <footer class="footer">
     <div class="container">
@@ -564,9 +568,9 @@
         <nav class="footer__container">
           <img src="img/icons/logo.svg" alt="" class="logo__img">          
             <ul class="header__menu">
-              <li class="header__menu-item"><a href="" class="header__menu-link">Недавно выкупили</a></li>
-              <li class="header__menu-item"><a href="" class="header__menu-link">Техника, которую выкупаем</a></li>
-              <li class="header__menu-item"><a href="" class="header__menu-link">Заявка на выкуп</a></li>
+              <li class="header__menu-item"><a href="#recent" class="header__menu-link">Недавно выкупили</a></li>
+              <li class="header__menu-item"><a href="#technique" class="header__menu-link">Техника, которую выкупаем</a></li>
+              <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Заявка на выкуп</a></li>
             </ul>
             <div class="header__contacts-container">
               <div class="header__contacts">
@@ -592,9 +596,9 @@
             <img src="img/icons/logo.svg" alt="" class="footer-logo__img">
             <div class="footer__upper-center">
               <ul class="header__menu">
-                <li class="footer__menu-item"><a href="" class="header__menu-link">Недавно выкупили</a></li>
-                <li class="footer__menu-item"><a href="" class="header__menu-link">Техника, которую выкупаем</a></li>
-                <li class="footer__menu-item"><a href="" class="header__menu-link">Заявка на выкуп</a></li>
+                <li class="footer__menu-item"><a href="#recent" class="header__menu-link">Недавно выкупили</a></li>
+                <li class="footer__menu-item"><a href="#technique" class="header__menu-link">Техника, которую выкупаем</a></li>
+                <li class="footer__menu-item"><a href="#contacts" class="header__menu-link">Заявка на выкуп</a></li>
               </ul>
               <div class="footer__contacts-container">
                 <div class="footer__contacts">

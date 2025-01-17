@@ -127,12 +127,14 @@
     padding: 24px 32px;
     height: 100%;
     flex-direction: column;
+    
     background: url("../img/icons/line__mobile.svg"),
-      url("../img/icons/line__mobile.svg");
-    background-position: 35% 50%, 60% 50%;
-    background-size: 19px, 19px;
+      url("../img/icons/line__mobile.svg"), url("../img/pictures/steps__bg-elem.svg"), var(--grey1);
+    background-position: 35% 50%, 60% 50%, left bottom;
+    background-size: 19px, 19px, contain 27px;
     background-repeat: no-repeat;
-    background-color: var(--grey1);
+    
+   
   }
   .steps__right {
     background: none;
@@ -152,7 +154,7 @@
   .hero__container {
     padding: 0;
     background: none;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
   .hero__img-mobile {
     display: block;
@@ -189,7 +191,10 @@
     margin-right: 0;
   }
   .steps__container {
-    background-position: 34% 50%, 62% 50%;
+    
+    background-position: 34% 50%, 62% 50%, left bottom;
+   
+    
   }
   .contacts__container {
     max-width: 100%;
@@ -198,10 +203,10 @@
 }
 @media (max-width: 460px) {
   .hero__title {
-    font-size: var(--h3);
+    font-size: var(--h1-mobile);
   }
   .title {
-    font-size: var(--h4);
+    font-size: var(--h2-mobile);
   }
   .recent__card-title {
     font-size: var(--h6);
@@ -212,11 +217,9 @@
   .technique__svg-box {
     width: 48px;
   }
-  .technique__container {
-    grid-template-columns: 1fr;
-  }
+  
   .steps__container {
-    background-position: 34% 50%, 62% 50%;
+    background-position: 34% 43%, 62% 43%, left bottom;
   }
   .steps__icon {
     width: 30px;
@@ -224,12 +227,21 @@
   .steps__right-item {
     margin-right: 30px;
   }
+  .technique__svg {
+    width: 48px;
+    height: 48px;
+  }
+  .technique__name {
+    font-size: 18px;
+  }
 }
 @media (max-width: 385px) {
   .steps__container {
     padding: 12px 24px;
-    background: none;
-    background-color: var(--grey1);
+    background: url("../img/pictures/steps__bg-elem.svg"), var(--grey1);
+    background-position: left bottom;
+    background-size: auto 27px;
+    background-repeat: no-repeat;
   }
 
   .steps__subtitle {
@@ -244,5 +256,8 @@
   }
   .steps__right-item:not(:last-child) {
     margin-bottom: 32px;
+  }
+  .technique__name {
+    font-size: 16px;
   }
 }
