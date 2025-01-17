@@ -149,6 +149,14 @@
     line-height: 150%;
     text-align: center;
   }
+  .cookie__container {
+    flex-direction: column;
+
+  }
+  .cookie__text {
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
 }
 @media (max-width: 650px) {
   .hero__container {
