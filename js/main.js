@@ -32,7 +32,7 @@ const cookies = document.querySelector('.cookie')
 function getCookies() {
   setTimeout(() => {
     cookies.classList.add('active')
-  }, 1000)
+  }, 2000)
 }
 cookiesBtn.addEventListener('click', function () {
   cookies.classList.remove('active')
@@ -54,7 +54,9 @@ const contacts = document.querySelector('.contacts')
 document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
     hero.classList.add('active')
-    steps.classList.add('active');
+    steps.classList.add('active')
+    getCookies()
+
   }, 100)
 
 
