@@ -703,6 +703,24 @@ svg.technique__svg.active path {
   /* margin: 0 auto; */
 }
 /* -----------Footer------------------- */
+.footer {
+  position: relative;
+}
+.footer__top-link {
+  position: absolute;
+  right: 24px;
+  top: 60%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 20;
+}
+.footer__top-img {
+  width: 48px;
+  height: 48px;
+}
 .footer__upper {
   border-bottom: 2px solid var(--grey3);
 }

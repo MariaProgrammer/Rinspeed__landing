@@ -242,6 +242,9 @@
   .technique__name {
     font-size: 18px;
   }
+  .footer__top-link {
+    display: none;
+  }
 }
 @media (max-width: 385px) {
   .steps__container {
